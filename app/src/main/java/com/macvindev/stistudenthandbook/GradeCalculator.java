@@ -51,7 +51,7 @@ public class GradeCalculator extends AppCompatActivity {
                 // Compute Average
                 averageFloat = ( prelimFloat * .20 + midtermFloat * .20 + pre_finalFloat * .20 + finalFloat * .40);
 
-                averageTextView.setText(averageFloat.toString());
+                averageTextView.setText(String.format("%.2f", averageFloat));
 
                 if(averageFloat >= 97.50){
                     txtViewRemarks.setText("Excellent");
