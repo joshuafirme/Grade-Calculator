@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 
 public class HomeActivity extends AppCompatActivity {
 
-    ImageButton calculatorImageButton;
+    ImageButton calculatorImageButton, stihymnImageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,12 +17,21 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         calculatorImageButton = findViewById(R.id.calculatorImageButton);
+        stihymnImageButton = findViewById(R.id.stihymnImageButton);
 
         calculatorImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentToGradeCalculator = new Intent (HomeActivity.this, GradeCalculator.class);
                 startActivity(intentToGradeCalculator);
+            }
+        });
+
+        stihymnImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentToSTIHymn = new Intent (HomeActivity.this, STIHymn.class);
+                startActivity(intentToSTIHymn );
             }
         });
     }

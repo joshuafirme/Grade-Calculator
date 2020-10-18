@@ -2,4 +2,20 @@
     <string name="app_name">STI Student Handbook</string>
     <string name="goto_home">Go To Home</string>
     <string name="todo">TO DO</string>
+    <string name="sty_hymn_title_lyrics">\n
+            Aim high with STI\n
+            The future is here today \n
+            Fly high with STI \n
+            Be the best that you can be \n
+            Onward to tomorrow \n
+            With dignity and pride \n
+            A vision of excellence \n
+            Our resounding battle cry \n
+            Aim high with STI \n
+            The future is here today \n
+            Fly high with STI \n
+Be the best that you can be</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
 </resources>
