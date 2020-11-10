@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
 
-    ImageButton calculatorImageButton, stihymnImageButton;
+    ImageButton calculatorImageButton, stihymnImageButton, imageview_video;
     TextView text_username;
-    String username, password;
+    String username;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,7 @@ public class HomeActivity extends AppCompatActivity {
 
         calculatorImageButton = findViewById(R.id.calculatorImageButton);
         stihymnImageButton = findViewById(R.id.stihymnImageButton);
+        imageview_video = findViewById(R.id.imageview_video);
         text_username = findViewById(R.id.text_username);
 
         Bundle data = getIntent().getExtras();
@@ -39,6 +40,14 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intentToSTIHymn = new Intent (HomeActivity.this, STIHymn.class);
                 startActivity(intentToSTIHymn );
+            }
+        });
+
+        imageview_video.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (HomeActivity.this, VideoActivity.class);
+                startActivity(intent);
             }
         });
     }
