@@ -6,11 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
 
     ImageButton calculatorImageButton, stihymnImageButton;
-
+    TextView text_username;
+    String username, password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +20,11 @@ public class HomeActivity extends AppCompatActivity {
 
         calculatorImageButton = findViewById(R.id.calculatorImageButton);
         stihymnImageButton = findViewById(R.id.stihymnImageButton);
+        text_username = findViewById(R.id.text_username);
+
+        Bundle data = getIntent().getExtras();
+        username = data.getString("username");
+        text_username.setText(username);
 
         calculatorImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
