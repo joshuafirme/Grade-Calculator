@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VideoActivity"></activity>
+        <activity android:name=".SuggestionBox"></activity>
+        <activity android:name=".QRGeneratorActivity" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".SwapperAndChecker" />
+        <activity android:name=".VideoActivity" />
         <activity android:name=".STIHymn" />
         <activity android:name=".GradeCalculator" />
         <activity android:name=".HomeActivity" />
